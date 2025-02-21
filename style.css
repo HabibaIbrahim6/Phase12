@@ -28,8 +28,8 @@ body {
 
 nav {
   position: relative;
-  width: 100%;
-  min-height: 650px;
+/*   width: 100%;
+  min-height: 650px; */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
