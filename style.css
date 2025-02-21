@@ -128,12 +128,13 @@ nav::before {
   padding: 30px;
   width: 500px;
   padding-left: 70px;
-  padding-top: 70px;
+  padding-top: 60px;
   padding-bottom: 60px;
 }
 .box1 p {
   color: gray;
   line-height: 1.7;
+  width: 320px;
 }
 .box1 h2{
   margin-bottom: 20px;
@@ -259,11 +260,17 @@ button{
   }
   .text h2{
       text-align: center;
-      margin: auto;
       margin-bottom: 30px;
       font-size: 30px;
       font-weight: 100;
       letter-spacing: 2px;
+  }
+  .text{
+    margin: 0;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+    margin-left: 50px;
   }
   .images .one {
       flex-direction: column;
@@ -275,7 +282,7 @@ button{
       width: 100%;
   }
   .images img {
-      width: 2000px;
+      width: 100%;
       height: 150px;
       object-fit:cover;
   
@@ -299,8 +306,6 @@ button{
       flex-direction: column;
       justify-content: center;
       align-items: center;
-  }
-.button1{
   }
   .footer .two p{
      margin: 0;
@@ -329,35 +334,30 @@ button{
       border-radius: 0;
     }
   
-    .container1 {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
+  
   
     .container1 img {
       width: 100%;
     }
   
-    /* .box {
+    .box {
       font-size: 25px;
       font-weight: -10;
       display: flex;
       justify-content: center;
       align-items: center; 
-      width: 500px;
+      width: 360px;
       margin: 10px;
       margin-right: 10px;
-    } */
-  
-    .box1 {
-      position: static;
-      width: 90%;
-      height: auto;
-      transform: none;
+      margin-left: 20px;
+      padding: 10px;
+      margin-top: 140px
     }
-  
+
+ 
+  body {
+      font-size: 10px;
+  }
   .htwo {
       font-size: 40px;
       margin: 20px;
@@ -374,36 +374,64 @@ button{
   .menu {
       display: block;
       width: 15px;
-      font-size: 40px;    
+      font-size: 40px;
+      margin-top: 12px;
+      margin-right: -50px;
+          
   }
-  .box {
-      width: 90%;
-      font-size: 30px;
-      padding: 20px;
-      margin: 20px;
-      line-height: 1.2;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-right: -100px;
-      letter-spacing: 2px;
-      margin-top: 130px;
+  .box1 {
+    position: static;
+    
+      width: 500px;
+      padding-left: 20px;
+      margin: 0;
+      transform: none;
+      background-color: white;
+      color: black;
+      width: 500px;
+      left: 0;
+  }
+  .box1 p{
+    margin: auto;
+    width: 240px;
   }
   .container1 {
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
+      padding: 20px;
+      margin-bottom: 0;
   }
-  /* .box1 {
-      transform: none;
-      background-color: white;
-      color: black;
-      width: 500px;
-      left: 0;
-  } */
+ 
   .container1 img {
       width: 100%;
   }
+  .images {
+      display: flex;
+      flex-direction: column;
+      /* gap: 15px;
+      padding: 20px; */
+      margin: 0;
   }
-
+  .contain {
+    padding: 0;
+  }
+  .filter img {
+      width: 1200px;
+      object-fit: cover;
+  }
+  .footer {
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+  }
+  .footer .titles, .footer .two {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .footer .social-icons a {
+      margin: 5px;
+  }
+}
