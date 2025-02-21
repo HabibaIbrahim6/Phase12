@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  font-family: 'Poppins', sans-serif;
+  justify-content: center;
+  align-content: center;
+  margin: 0;
+  font-size: 10px;
+}
+
+.container {
+  background-color: white;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* .htwo {
+  font-size: 55px;
+  font-weight: 100;
+  gap: 0;
+  padding: 0;
+  font-weight: 100;
+} */
+
+nav {
+  position: relative;
+  width: 100%;
+  min-height: 650px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  z-index: 0;
+}
+
+nav::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('image-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(50%);
+  z-index: -1;
+}
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 85px;
+  padding: 40px 80px;
+
+}
+
+.sections {
+  font-size: 15px;
+  width: 400px;
+  display: flex;
+  font-weight: 500;
+  margin: 10px 85px;
+  text-transform: capitalize;
+  /* padding: 40px 80px; */
+  
+}
+.sections h4 {
+  margin-left: 40px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid white;
+  width: 680px;
+  font-size: 70px;
+  margin: 50px 160px;
+  overflow: hidden; 
+  box-sizing: border-box;
+  font-weight: 200;
+  padding-left: 30px;
+  padding-top: 30px; 
+  padding-bottom: 30px;
+  line-height: 1.1;
+  letter-spacing: 2px;
+}
+
+.box p {
+  margin: 2px; 
+  padding:10px; 
+}
+
+
+.containernav {
+  display: flex;
+  flex-direction: column;
+}
+
+.container1 {
+  position: relative;
+  margin: 40px auto;
+  max-width: 1200px;
+  padding-left: 30px;
+  padding-top: 30px; 
+  margin-top: 100px;
+  margin-bottom: 130px;
+}
+
+.container1 img {
+  display: block;
+  width: 55%;
+}
+
+.box1 {
+  position: absolute;
+  top: 75%;
+  left: 45%;
+  transform: translateY(-50%);
+  background-color: white;
+  color: black;
+  padding: 30px;
+  width: 500px;
+  padding-left: 70px;
+  padding-top: 70px;
+  padding-bottom: 60px;
+}
+.box1 p {
+  color: gray;
+  line-height: 1.7;
+}
+.box1 h2{
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+}
+h1{
+  font-size: 25px;
+  font-weight: bold;
+}
+.h{
+  color: rgba(0, 0, 0, 0.75);
+  font-weight: 100;
+  font-size: 35px;
+  line-height: 1.1;
+  letter-spacing: 2;
+}
+.hh{
+  font-size: 15px;
+}
+button{
+  border: 2px solid black;
+  padding: 5px 35px;
+  cursor: pointer;
+}
+.filter {
+  position: relative;
+ 
+}
+
+.filter::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+}
+.img1::after,.img2::after,.img3::after,.img4::after,.img5::after,.img6::after,.img7::after,.img8::after{
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  width: 50px;
+  opacity:.8 ;
+  font-weight: 40;
+  line-height: 1.0;
+  z-index: 5;
+  font-size: 35px;
+}
+.img1::after{ 
+  content: 'Deep earth';
+}
+.img2::after{
+  content: 'Night arcade';
+}
+.img3::after{
+  content: 'Soccer team VR';
+  width:150px;
+}
+.img4::after{
+  content: 'The grid';
+}
+.img5::after{
+  content: 'From up above VR';
+  width: 170px;
+}
+.img6::after{
+  content: 'Pocket borealis';
+}
+.img7::after{
+  content: 'The curiosity';
+}
+.img8::after{
+  content: 'Make it fisheye';
+  width: 170px;
+} 
+.social-icons a {
+  color: white;
+  font-size: 24px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.contain{
+  padding-left: 70px;
+  padding-top: 70px;
+  padding-bottom: 60px;
+}
+.text{
+  display:  flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 17px;
+  font-weight: lighter;
+  margin-left: 120px;
+  margin-right: 250px;
+  margin-bottom: 70px;
+}
+.images{
+  margin-right:110px ;
+}
+.footer{
+  padding-left: 200px;
+  padding-right: 200px;
+}
+.footer .two p{
+  color: gray;
+  
+}
+.menu {
+  display: none;
+}
+
+  @media (max-width: 400px) {
+    * {
+      padding: 0;
+      margin: 0;
+    }
+  
+  .contain{
+      margin: 20px;
+  }
+  .text h2{
+      text-align: center;
+      margin: auto;
+      margin-bottom: 30px;
+      font-size: 30px;
+      font-weight: 100;
+      letter-spacing: 2px;
+  }
+  .images .one {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: self-start;
+      margin-bottom: 20px;
+  }
+  .filter{
+      width: 100%;
+  }
+  .images img {
+      width: 2000px;
+      height: 150px;
+      object-fit:cover;
+  
+  }
+  .filter::after{
+      font-size: 30px;
+      bottom: 23px;
+      opacity: .9;
+      left:20px;
+  }
+  .filter::before{
+      background-color:rgba(0, 0, 0, 0.2) ;
+  }
+  .footer{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px ;
+  }
+  .footer .two{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+.button1{
+  }
+  .footer .two p{
+     margin: 0;
+     padding: 0;
+     margin-top: 10px;
+  }
+  .footer .titles{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 25px;
+      margin-bottom: 30px;
+  }
+    .htwo {
+      font-weight: 50;
+      font-size: 40px;
+      margin: 20px;
+    }
+  
+    .sections {
+      display: none;
+    }
+  
+    .container {
+      width: 100%;
+      border-radius: 0;
+    }
+  
+    .container1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .container1 img {
+      width: 100%;
+    }
+  
+    /* .box {
+      font-size: 25px;
+      font-weight: -10;
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+      width: 500px;
+      margin: 10px;
+      margin-right: 10px;
+    } */
+  
+    .box1 {
+      position: static;
+      width: 90%;
+      height: auto;
+      transform: none;
+    }
+  
+  .htwo {
+      font-size: 40px;
+      margin: 20px;
+      margin-right: 40px;
+  }
+  .Header {
+      margin: 0;
+      padding-top: 20px;
+      padding-left: 20px;
+  }
+  .sections {
+      display: none;
+  }
+  .menu {
+      display: block;
+      width: 15px;
+      font-size: 40px;    
+  }
+  .box {
+      width: 90%;
+      font-size: 30px;
+      padding: 20px;
+      margin: 20px;
+      line-height: 1.2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: -100px;
+      letter-spacing: 2px;
+      margin-top: 130px;
+  }
+  .container1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+  /* .box1 {
+      transform: none;
+      background-color: white;
+      color: black;
+      width: 500px;
+      left: 0;
+  } */
+  .container1 img {
+      width: 100%;
+  }
+  }
+
